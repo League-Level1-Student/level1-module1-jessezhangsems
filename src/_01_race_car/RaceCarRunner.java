@@ -12,6 +12,14 @@ public class RaceCarRunner {
 		
 		// 1. Create a RaceCar and place it in 5th position
 	RaceCar carrace=new RaceCar("Toyota",5);
+	System.out.println(carrace.getPositionInRace());
+	carrace.crash();
+	if(carrace.damaged) {
+		carrace.pit();
+	}
+	while(carrace.getPositionInRace()!=1) {
+		carrace.overtake();
+	}
 		// 2. Print the RaceCar's position in the race
 
 		// 3. Crash the RaceCar
