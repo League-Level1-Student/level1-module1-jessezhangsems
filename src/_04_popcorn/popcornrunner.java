@@ -9,7 +9,10 @@ public static void main(String[]args) {
 	String input1=JOptionPane.showInputDialog("How long do you want to heat it?");
 	int num=Integer.parseInt(input1);
 	
-	popcorn.applyHeat(num);
+	Microwave microwave=new Microwave();
+	microwave.putInMicrowave(popcorn);
+	microwave.setTime(num);
+	microwave.startMicrowave();
 	
 }
 }
