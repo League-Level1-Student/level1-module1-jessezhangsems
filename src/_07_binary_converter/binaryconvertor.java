@@ -51,5 +51,9 @@ String convert(String input) {
 public void actionPerformed(ActionEvent arg0) {
 	// TODO Auto-generated method stub
 	
+	String i=textfield.getText();
+	String convert=convert(i);
+	label.setText(convert);
+	frame.pack();
 }
 }
